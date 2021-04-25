@@ -25,7 +25,7 @@
 ![demo](/pictures/demo.gif)
 ## 安装
 1. 添加JitPack到项目的根build文件
-```grooy
+```
 allprojects {
   repositories {
 	...
@@ -57,9 +57,9 @@ dependencies {
 
     override fun convert(holder: BaseViewHolder, item: Subject) {
         if (isSelected(holder.layoutPosition)) {
-           ...
+           ///
         } else {
-           ...
+           ///
         }
     }
 }
@@ -71,11 +71,11 @@ class SecondAdapter(data: MutableList<WallpaperSection> = mutableListOf()) :
         (R.layout.layout_common_head, R.id.tvHead, R.layout.app_item_rv_paper, data) {
 
     override fun convert(holder: BaseViewHolder, item: WallpaperSection) {
-      ...
+      ///
     }
 
     override fun convertHeader(helper: BaseViewHolder, item: WallpaperSection) {
-        ...
+      ///
     }
 }
 ```
