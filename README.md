@@ -22,8 +22,10 @@
 屏蔽内部联动逻辑，基于知名的[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)库设计Api,实现对原有Adapter写法的无缝对接
 
 ## 演示
-![primary_click](/pictures/primary_click.gif)
-![second_scroll](/pictures/second_scroll.gif)
+
+| Primary_Click | Second_Scroll |
+| :-----------: | :-----------: |
+| ![1.gif](/pictures/primary_click.gif) | ![2.gif](/pictures/second_scroll.gif) |
 ## 安装
 1. 添加JitPack到项目的根build文件
 ```
