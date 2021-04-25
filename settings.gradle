@@ -1,0 +1,3 @@
+include ':brv-linkage-recyclerview'
+include ':app'
+rootProject.name = "BrvLinkageRecyclerView"

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--base color-->
+    <color name="pink">#fb7299</color>
+    <color name="pink_dark">#b85671</color>
+    <color name="pink_trans">#99f0486c</color>
+
+    <color name="blue">#2196F3</color>
+    <color name="blue_dark">#1565C0</color>
+    <color name="blue_trans">#B41A78C3</color>
+
+    <color name="purple">#673AB7</color>
+    <color name="purple_dark">#311B92</color>
+    <color name="purple_trans">#99673AB7</color>
+
+    <color name="green">#4CAF50</color>
+    <color name="green_dark">#2E7D32</color>
+    <color name="green_trans">#994CAF50</color>
+
+    <color name="green_light">#8BC34A</color>
+    <color name="green_light_dark">#558B2F</color>
+    <color name="green_light_trans">#998BC34A</color>
+
+    <color name="yellow">#FDD835</color>
+    <color name="yellow_dark">#FBC02D</color>
+    <color name="yellow_trans">#99FDD835</color>
+
+    <color name="orange">#FF9800</color>
+    <color name="orange_dark">#EF6C00</color>
+    <color name="orange_trans">#99FF9800</color>
+
+    <color name="red">#F44336</color>
+    <color name="red_dark">#C62828</color>
+    <color name="red_trans">#99F44336</color>
+
+    <!--不透明度-->
+    <color name="black_10">#1A000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4D000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_90">#E6000000</color>
+
+    <color name="grey">#BEBEBE</color>
+    <color name="grey_dark">#A9A9A9</color>
+    <color name="grey_trans">#D3D3D3</color>
+    <color name="grey_11">#1C1C1C</color>
+    <color name="grey_21">#363636</color>
+    <color name="grey_31">#4F4F4F</color>
+    <color name="grey_41">#696969</color>
+    <color name="grey_51">#828282</color>
+    <color name="grey_61">#9C9C9C</color>
+    <color name="grey_71">#B5B5B5</color>
+    <color name="grey_81">#CFCFCF</color>
+    <color name="grey_91">#E8E8E8</color>
+</resources>
