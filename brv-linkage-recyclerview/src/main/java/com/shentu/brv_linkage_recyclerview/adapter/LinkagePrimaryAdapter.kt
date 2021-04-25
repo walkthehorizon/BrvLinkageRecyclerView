@@ -6,7 +6,7 @@ import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import com.shentu.brv_linkage_recyclerview.bean.BasePrimaryItem
 
 class LinkagePrimaryAdapter(
-    private val outAdapter: IPrimaryAdapter<BasePrimaryItem>
+    private val outAdapter: IPrimaryAdapter<BasePrimaryItem,BaseViewHolder>
 ) : BaseQuickAdapter<BasePrimaryItem, BaseViewHolder>(
     outAdapter.layoutResId, outAdapter.data
 ) {

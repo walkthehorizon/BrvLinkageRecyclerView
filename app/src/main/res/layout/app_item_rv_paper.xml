@@ -30,20 +30,22 @@
 
     <TextView
         android:id="@+id/tvDesc"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin12"
         android:ellipsize="end"
         android:maxWidth="200dp"
         android:maxLines="3"
         app:layout_constraintBottom_toBottomOf="@+id/ivPaper"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tvName"
-        tools:text="漩涡鸣人，日本漫画《火影忍者》及其衍生作品中的男主角" />
+        tools:text="@string/app_subject_desc" />
 
     <FrameLayout
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
+        android:layout_height="0.5dp"
         android:background="@color/grey_91"
-        android:layout_height="0.5dp"/>
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
