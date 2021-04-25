@@ -25,7 +25,7 @@
 
 | Primary_Click | Second_Scroll |
 | :-----------: | :-----------: |
-| ![1.gif](/pictures/primary_click.gif) | ![2.gif](/pictures/second_scroll.gif) |
+| ![1.gif](/pictures/primary_click_1.gif) | ![2.gif](/pictures/second_scroll_1.gif) |
 ## 安装
 1. 添加JitPack到项目的根build文件
 ```
