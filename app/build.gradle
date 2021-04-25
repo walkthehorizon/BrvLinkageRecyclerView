@@ -47,9 +47,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6'
-    implementation project(':brv-linkage-recyclerview')
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'
+
+//    implementation project(':brv-linkage-recyclerview')
+    implementation 'com.github.walkthehorizon:BrvLinkageRecyclerView:1.0.0'
 }
