@@ -52,6 +52,6 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'
 
-//    implementation project(':brv-linkage-recyclerview')
-    implementation 'com.github.walkthehorizon:BrvLinkageRecyclerView:1.0.0'
+    implementation project(':brv-linkage-recyclerview')
+//    implementation 'com.github.walkthehorizon:BrvLinkageRecyclerView:1.0.2'
 }

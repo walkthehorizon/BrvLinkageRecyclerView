@@ -8,7 +8,7 @@ import com.chad.library.adapter.base.listener.OnItemLongClickListener
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import java.util.LinkedHashSet
 
-abstract class BaseLinkageAdapter<T> {
+abstract class BaseLinkageAdapter<T,VH:BaseViewHolder> {
 
     private var mOnItemClickListener: OnItemClickListener? = null
     private var mOnItemLongClickListener: OnItemLongClickListener? = null
@@ -17,7 +17,7 @@ abstract class BaseLinkageAdapter<T> {
     val childClickViewIds = LinkedHashSet<Int>()
     val childLongClickViewIds = LinkedHashSet<Int>()
 
-    abstract fun convert(holder: BaseViewHolder, item: T)
+    abstract fun convert(holder: VH, item: T)
 
     fun addChildClickViewIds(@IdRes vararg viewIds: Int) {
         for (viewId in viewIds) {

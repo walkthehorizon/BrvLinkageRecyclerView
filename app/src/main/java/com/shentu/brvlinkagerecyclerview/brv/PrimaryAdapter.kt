@@ -8,7 +8,7 @@ import com.shentu.brvlinkagerecyclerview.bean.Subject
 import com.shentu.brv_linkage_recyclerview.adapter.IPrimaryAdapter
 
 class PrimaryAdapter(data: MutableList<Subject> = mutableListOf())
-    :IPrimaryAdapter<Subject>(R.layout.app_item_rv_subject,data){
+    :IPrimaryAdapter<Subject,BaseViewHolder>(R.layout.app_item_rv_subject,data){
 
     override fun convert(holder: BaseViewHolder, item: Subject) {
         holder.setText(R.id.tvSubjectName, item.name)

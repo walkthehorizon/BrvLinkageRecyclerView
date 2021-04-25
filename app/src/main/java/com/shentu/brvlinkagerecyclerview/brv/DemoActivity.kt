@@ -10,18 +10,21 @@ import com.shentu.brvlinkagerecyclerview.DataRepository
 import com.shentu.brvlinkagerecyclerview.R
 import com.shentu.brvlinkagerecyclerview.bean.Subject
 import com.shentu.brvlinkagerecyclerview.bean.WallpaperSection
-import com.shentu.brvlinkagerecyclerview.databinding.ActivityBrvBinding
-import kotlinx.coroutines.*
+import com.shentu.brvlinkagerecyclerview.databinding.ActivityDemoBinding
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.launch
 
 class DemoActivity : AppCompatActivity(), CoroutineScope by MainScope() {
 
-    private lateinit var binding: ActivityBrvBinding
+    private lateinit var binding: ActivityDemoBinding
     private lateinit var primaryAdapter: PrimaryAdapter
     private lateinit var secondAdapter: SecondAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityBrvBinding.inflate(layoutInflater)
+        binding = ActivityDemoBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.linkRecyclerView.setRvPrimaryBackground(
             ContextCompat.getColor(
