@@ -52,13 +52,13 @@ class DemoActivity : AppCompatActivity(), CoroutineScope by MainScope() {
         paperSections: MutableList<WallpaperSection>
     ) {
         primaryAdapter = PrimaryAdapter(subjects)
-        primaryAdapter.setOnItemClickListener { adapter, _, position ->
-            Snackbar.make(
-                binding.root,
-                "primary_" + (adapter.data[position] as Subject).name,
-                LENGTH_SHORT
-            ).show()
-        }
+//        primaryAdapter.setOnItemClickListener { adapter, _, position ->
+//            Snackbar.make(
+//                binding.root,
+//                "primary_" + (adapter.data[position] as Subject).name,
+//                LENGTH_SHORT
+//            ).show()
+//        }
         secondAdapter = SecondAdapter(paperSections)
         secondAdapter.setOnItemClickListener { adapter, _, position ->
             Snackbar.make(
