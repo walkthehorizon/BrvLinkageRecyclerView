@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.shentu.brv_linkage_recyclerview.LinkageRecyclerView
+    <com.shentu.brv_linkage_recyclerview.BrvLinkageRecyclerView
         android:id="@+id/linkRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

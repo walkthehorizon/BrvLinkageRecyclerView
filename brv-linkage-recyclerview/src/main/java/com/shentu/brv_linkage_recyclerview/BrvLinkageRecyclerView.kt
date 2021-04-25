@@ -26,7 +26,7 @@ import com.shentu.brv_linkage_recyclerview.bean.BaseSecondItem
 import com.shentu.brv_linkage_recyclerview.helper.RecyclerViewScrollHelper.smoothScrollToPosition
 import java.util.*
 
-class LinkageRecyclerView : ConstraintLayout {
+class BrvLinkageRecyclerView : ConstraintLayout {
     private var mContext: Context? = null
     private lateinit var rootView: ViewGroup
     private lateinit var rvPrimary: RecyclerView
