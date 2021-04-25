@@ -77,6 +77,11 @@ class BrvLinkageRecyclerView : ConstraintLayout {
         rvSecondary.layoutManager = secondaryLayoutManager
     }
 
+    fun setAdapter(primaryAdapter: IPrimaryAdapter<*>, secondAdapter: ISecondAdapter<*, *>) {
+        setRvPrimaryAdapter(primaryAdapter)
+        setRvSecondAdapter(secondAdapter)
+    }
+
     fun setRvPrimaryAdapter(adapter: IPrimaryAdapter<*>) {
         primaryAdapter = LinkagePrimaryAdapter(adapter as IPrimaryAdapter<BasePrimaryItem>)
         primaryAdapter.setOnItemClickListener { adapter: BaseQuickAdapter<*, *>, view: View, position: Int ->
