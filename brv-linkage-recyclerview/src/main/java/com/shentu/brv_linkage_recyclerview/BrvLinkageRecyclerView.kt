@@ -77,15 +77,22 @@ class BrvLinkageRecyclerView : ConstraintLayout {
         rvSecondary.layoutManager = secondaryLayoutManager
     }
 
-    fun setAdapter(primaryAdapter: IPrimaryAdapter<*,BaseViewHolder>, secondAdapter: ISecondAdapter<*, *>) {
+    fun setAdapter(
+        primaryAdapter: IPrimaryAdapter<*, BaseViewHolder>,
+        secondAdapter: ISecondAdapter<*, *>
+    ) {
         setRvPrimaryAdapter(primaryAdapter)
         setRvSecondAdapter(secondAdapter)
     }
 
-    fun setRvPrimaryAdapter(adapter: IPrimaryAdapter<*,BaseViewHolder>) {
-        primaryAdapter = LinkagePrimaryAdapter(adapter as IPrimaryAdapter<BasePrimaryItem,BaseViewHolder>)
+    fun setRvPrimaryAdapter(adapter: IPrimaryAdapter<*, BaseViewHolder>) {
+        primaryAdapter =
+            LinkagePrimaryAdapter(adapter as IPrimaryAdapter<BasePrimaryItem, BaseViewHolder>)
         primaryAdapter.setOnItemClickListener { adapter: BaseQuickAdapter<*, *>, view: View, position: Int ->
             primaryAdapter.onItemClick(adapter, view, position)
+            if (primaryAdapter.getSelectedPosition() == position) {
+                return@setOnItemClickListener
+            }
             if (isScrollSmoothly) {
                 smoothScrollToPosition(
                     rvSecondary,
